@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.item-1 {
+  background-image: url("./images/girl-1.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.grid {
+  display: grid;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  transition-duration: 300ms;
+}
+
+img:hover{
+  filter: brightness(0.8);
+}
+
+@media (min-width: 768px) {
+  .grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.girls{
+padding-top: 150px; 
+background-color: rgb(238, 132, 150);
+}
+
+h2{
+  font-size: 150px;
+  text-align: center;
+  margin-bottom: -36px;
+  position: relative;
+  z-index: 40;
+color: white;
+}
